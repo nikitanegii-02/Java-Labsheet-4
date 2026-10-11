@@ -17,12 +17,8 @@ public class Q30Library {
 
         System.out.println("\nLibrary Name: " + libraryName);
         System.out.println("Books Available: " + l.booksAvailable);
-
-        // Issue operation
         System.out.println("\nEnter number of books to issue:");
         int issueBooks = sc.nextInt();
-
-        // Local variable
         int issue = issueBooks;
 
         if (issue <= l.booksAvailable) {
@@ -33,12 +29,8 @@ public class Q30Library {
         }
 
         System.out.println("Books Available after issue: " + l.booksAvailable);
-
-        // Return operation
         System.out.println("\nEnter number of books to return:");
         int returnBooks = sc.nextInt();
-
-        // Local variable
         int returned = returnBooks;
 
         l.booksAvailable = l.booksAvailable + returned;
